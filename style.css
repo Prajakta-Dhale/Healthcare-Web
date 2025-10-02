@@ -1,0 +1,149 @@
+*{
+    width: auto;
+    padding: auto;
+    
+}
+
+.logo img{
+    height: 8rem;
+    width: 9rem;
+}
+
+.nav-item{
+    font-size: 19px;
+}
+
+.card{
+    width: 80%;
+    justify-self: center;
+    margin-bottom: 3rem;
+    background-color: beige;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.h1{
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: radial-gradient(
+                280% 1946.63% at -2.5% 168.7%,
+                rgb(97, 166, 242) 3.56053%,
+                rgb(143, 111, 219) 8.55746%,
+                rgb(255, 90, 94) 37.9909%,
+                rgb(242, 201, 76) 100%
+              );
+}
+
+.carousel-inner{
+    height: 34rem; 
+    width: 100%;
+    align-items: center;
+}
+
+.carousel-item img{
+    height: 35rem; 
+    width: 100%;
+    align-items: center;
+}
+.card-body{
+    box-shadow: 1px 1px 10px 1px;
+    
+}
+
+.card-text{
+    margin-top: 1rem;
+}
+
+.container{
+    width: 100%;
+    background-color: beige;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  background-color: rgb(91, 195, 195);
+  color: black;
+  margin-top: 1px;
+}
+
+.contain{
+    height: 30rem;
+    margin: 5rem;
+    box-shadow: 4px 3px 15px 1px;
+    cursor: pointer; 
+}
+
+.contain:hover{
+    transform: translateX(-10px);
+}
+
+.contain {
+    transition: transform 0.5s ease-in-out;
+      }
+
+.contain img{
+    width: auto;
+    height: 20rem;
+    margin: 4rem;
+}
+
+.contain p{
+    font-size: 19px;
+}
+
+.text{
+    width: 50%;
+    margin-left: 27%;
+    margin-top: 3rem;
+    text-align: center;
+    background-color: rgb(91, 195, 195);
+    box-shadow: 1px 1px 20px 1px;
+}
+
+iframe{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.about{
+    width: 100%;
+    padding: 5rem;
+}
+
+.butt{
+    padding: 1.1rem;
+    background-color: white;
+    color: rgb(0, 119, 255);
+    font-weight: 600;
+}
+
+.appointment{
+    margin-bottom: 4rem;
+    padding: 5rem;
+    background-color: rgb(0, 119, 255);
+}
+.appointment p{
+    margin: auto;
+    color: white;
+}
+.commit{
+    padding: 4rem;
+    background-color: rgb(231, 229, 229);
+    margin-bottom: 4rem;
+}
+
+.section{
+    width: 50rem;
+    background-color: rgb(254, 247, 240);
+    margin: 2rem;
+}
+.cont{
+    width: 55rem;
+    background-color: rgb(254, 247, 240);
+    justify-self: center;
+}
