@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Scrubs & Stories Healthcare</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <style>
+      @media screen and (max-width: 700px) {
+        section img {
+          width: 10rem;
+          margin-left: 0;
+        }
+        section {
+          width: 95%;
+          margin-left: 5px;
+          font-size: 10px;
+        }
+        .container {
+          width: 290px;
+          margin-top: 0;
+        }
+        .card {
+          min-width: 140px;
+          flex-shrink: 0;
+          display: flex;
+        }
+        .card-body {
+          width: 100%;
+          display: flex;
+        }
+        .h1 {
+          font-size: 20px;
+        }
+
+        .scroll-content {
+          gap: 1.5rem;
+          min-width: fit-content;
+          animation: marquee 15s linear infinite;
+        }
+
+        @keyframes marquee {
+          0% {
+            transform: translateX(100%);
+          }
+          100% {
+            transform: translateX(-100%);
+          }
+        }
+      }
+
+      @media screen and (min-width: 768px) {
+        .carousel-inner {
+          height: 34rem;
+          width: 100%;
+        }
+
+        .carousel-item img {
+          height: 35rem;
+          width: 100%;
+        }
+        section img {
+          width: 50%;
+          margin-left: 8rem;
+        }
+        hr {
+          width: 100%;
+        }
+
+        section {
+          width: 100%;
+          margin: 5rem;
+          font-size: 18px;
+          margin-left: 5px;
+        }
+    
+      .container {
+        width: 800px;
+        margin-top: 0;
+      }
+      .card {
+        min-width: 140px;
+        flex-shrink: 0;
+        display: flex;
+      }
+      .card-body {
+        width: 100%;
+        display: flex;
+      }
+      .h1 {
+        font-size: 20px;
+      }
+
+      .scroll-content {
+        gap: 1.5rem;
+        min-width: fit-content;
+        animation: marquee 15s linear infinite;
+      }
+      .scroll-container {
+        width: 100%;
+      }
+
+      @keyframes marquee {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+      footer {
+        width: 100%;
+      }
+      nav {
+        width: 100%;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <!-- nav section -->
+    <nav class="navbar navbar-expand-lg text-center" data-bs-theme="light">
+      <div
+        class="container-fluid rounded-5"
+        style="background-color: rgb(91, 195, 195); padding-left: 1px"
+      >
+        <a class="logo" href="#"><img src="logo.png" alt="logo" /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-1 mb-lg-0" style="margin-left: 4%">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="findadr.html">Find a Doctor</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                More
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="depart.html">Department</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="aboutus.html">About Us</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="connectus.html">Connect Us</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- main section -->
+
+    <div
+      id="carouselExampleAutoplaying"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner mb-5">
+        <div class="carousel-item active">
+          <img src="healthcare.jpg" class="d-block" alt="HC" />
+        </div>
+
+        <div class="carousel-item active">
+          <img src="GD.jpg" class="d-block" alt="HC" />
+        </div>
+
+        <div class="carousel-item active">
+          <img src="pathology.jpg" class="d-block" alt="HC" />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="scroll-container">
+      <div class="scroll-content">
+        <div class="card">
+          <div class="card-body">
+            <span data-text-fill="true" class="h1">Physicians</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <span data-text-fill="true" class="h1">Pediatrician </span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <span data-text-fill="true" class="h1">Nutrition</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <span data-text-fill="true" class="h1">Gynecologist</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <span data-text-fill="true" class="h1">Dental</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <span data-text-fill="true" class="h1">Therapy</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <section style="column-count: 2; margin-right: 20px">
+      <h1 class="text-primary text-center">Our Symbol</h1>
+      <img src="logo.png" alt="logo" />
+
+      <p>
+        With a name like Scrubs and Stories, this website isn't just a place,
+        it's a vibrant tapestry woven from the threads of two distinct worlds.
+        The word "Scrubs" isn't merely a piece of fabric; it's a uniform, a
+        symbol of long nights and early mornings, of quiet triumphs and
+        heartbreaking losses. It represents the quiet dedication of nurses and
+        doctors, the hustle of EMTs, and the tireless work of every healthcare
+        professional who steps into the fray. These are the people who are a
+        part of monumental moments, and their experiences are often hidden
+        behind the sanitized walls of a hospital. But then, you have "Stories."
+        The stories are the beating heart that brings those scrubs to life.
+        They're the intimate conversations in a breakroom, the shared laughter
+        over a coffee, the whisper of a patient's secret, and the shouted
+        victory of a life saved. Together, this name promises a unique blend of
+        professional expertise and raw human experience—the serious, the funny,
+        the poignant, and the unforgettable. It's an invitation to peek behind
+        the curtain and hear the unwritten chapters from the lives of those who
+        wear the scrubs, revealing the profound humanity that drives them every
+        day.
+      </p>
+    </section>
+
+    <!-- footer section -->
+    <footer>
+      <div class="container mb-3 mt-3">
+        <div class="row">
+          <div class="col-md-4">
+            <h4>SCRUBS AND STORIES</h4>
+            <h6>
+              4th floor,Imperial Lifestyle,<br />
+              Near Toyota Showroom,<br />
+              Road No 22, Wagle Estate <br />
+              Vasai-West
+            </h6>
+          </div>
+          <div class="col-md-4">
+            <h4>Quick links</h4>
+            <a
+              class="text-primary fs-6"
+              style="text-decoration: none"
+              href="index.html"
+              >Home</a
+            ><br />
+            <a
+              class="text-primary fs-6"
+              style="text-decoration: none"
+              href="findadr.html"
+              >Find a Doctor</a
+            ><br />
+            <a
+              class="text-primary fs-6"
+              style="text-decoration: none"
+              href="depart.html"
+              >Department</a
+            ><br />
+            <a
+              class="text-primary fs-6"
+              style="text-decoration: none"
+              href="aboutus.html"
+              >About Us</a
+            ><br />
+            <a
+              class="text-primary fs-6"
+              style="text-decoration: none"
+              href="connectus.html"
+              >Connect Us</a
+            >
+          </div>
+          <div class="col-md-4" style="cursor: pointer">
+            <h4>Connect Us</h4>
+            <i class="bi bi-facebook"></i><br />
+            <i class="bi bi-instagram"></i><br />
+            <i class="bi bi-youtube"></i><br />
+            <i class="bi bi-twitter"></i>
+          </div>
+        </div>
+        <p class="mt-4">&copy; 2025 Prajakta Dhale. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
